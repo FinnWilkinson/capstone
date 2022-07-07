@@ -905,7 +905,7 @@ size_t CAPSTONE_API cs_disasm(csh ud, const uint8_t *buffer, size_t size, uint64
 
 			handle->printer(&mci, &ss, handle->printer_info);
 			fill_insn(handle, insn_cache, ss.buffer, &mci, handle->post_printer, buffer);
-			(*insn)->opcode = mci.Opcode;
+			insn_cache->opcode = mci.Opcode;
 
 			// adjust for pseudo opcode (X86)
 			if (handle->arch == CS_ARCH_X86)
