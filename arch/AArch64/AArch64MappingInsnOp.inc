@@ -10830,7 +10830,7 @@
 
 {	/* AArch64_LD2Twov4s_POST, AArch64_INS_LD2: ld2 */
 	0,
-	{ CS_AC_WRITE | CS_AC_READ, CS_AC_WRITE | CS_AC_READ, CS_AC_READ, 0}
+	{ CS_AC_WRITE, CS_AC_WRITE, CS_AC_READ, 0}
 },
 
 {	/* AArch64_LD2Twov8b, AArch64_INS_LD2: ld2 */
